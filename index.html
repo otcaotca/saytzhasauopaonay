@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>saytzhasauopaonay — AI Site Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">✦ saytzhasauopaonay</div>
+  <button id="publish">🌐 Жариялау</button>
+</header>
+<main>
+  <section class="chat panel">
+    <div class="head"><b>AI сайт жасаушы</b><small>Идеяңды жаз — сайт дайын.</small></div>
+    <div id="messages" class="messages">
+      <div class="msg ai">Сәлем! 👋<br>Қандай сайт керек екенін жазыңыз.<br><br><b>Мысалы:</b> «Мектепке арналған көк түсті заманауи сайт жаса, анимация және байланыс бөлімі болсын.»</div>
+    </div>
+    <form id="form">
+      <textarea id="prompt" placeholder="Сайтыңды сипатта..." required></textarea>
+      <button>✨ Сайт жасау</button>
+    </form>
+  </section>
+  <section class="preview panel">
+    <div class="previewHead"><b>Preview</b><span id="status">Дайын</span></div>
+    <iframe id="frame" title="Сайт preview"></iframe>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
